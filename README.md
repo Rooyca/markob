@@ -7,7 +7,7 @@ Highlight your text and send it to your Obsidian vault. It automatically creates
 
 ### Firefox
 
-1. Download the latest version from [here]("Install.zip")
+1. Download the latest version from [here](Install.zip)
 2. Open `about:debugging` in Firefox
 3. Click on "This Firefox"
 4. Click on "Load Temporary Add-on"
