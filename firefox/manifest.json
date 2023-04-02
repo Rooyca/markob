@@ -1,0 +1,65 @@
+{
+  "description": "Highlight your text and send it to your Obsidian vault. It automatically creates you a file with the name of the page.",
+  "manifest_version": 2,
+  "name": "MarkOb - Highligthed text to Obsidian",
+  "version": "1.1",
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["exhigh.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "highlight-text": {
+      "suggested_key": {
+        "default": "Alt+J",
+        "mac": "Alt+J"
+      },
+      "description": "Highlight selected text"
+    },
+    "highlight-text-note": {
+      "suggested_key": {
+        "default": "Alt+K",
+        "mac": "Alt+K"
+      },
+      "description": "Highlight selected text adding a note"
+    },
+    "highlight-text-tags": {
+      "suggested_key": {
+        "default": "Alt+L",
+        "mac": "Alt+L"
+      },
+      "description": "Highlight selected text adding tags"
+    },
+    "highlight-text-note-tags": {
+      "suggested_key": {
+        "default": "Alt+P",
+        "mac": "Alt+P"
+      },
+      "description": "Highlight selected text adding a note and tags"
+    }
+  },
+  "permissions" : [
+    "<all_urls>",
+    "contextMenus",
+    "notifications",
+    "webNavigation",
+    "storage"
+  ],
+  "browser_action": {
+    "default_icon": "icons/icon-48.png",
+    "default_title": "MarkOb",
+    "default_popup": "popup/popup.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "rooyca@r00yca"
+    }
+  }
+}
