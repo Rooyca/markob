@@ -1,4 +1,5 @@
-# MarkOb
+# **MarkOb**
+
 
 Highlight your text and send it to your Obsidian vault. It automatically creates you a file with the name of the page.
 
@@ -28,7 +29,7 @@ Where `/home/rooyca/Documents/Obsidian/Highlights/` is the path to your Obsidian
 
 It's that simple!
 
-##### Docker build
+#### Docker build
 
 If you want to build the docker image yourself you can do it by:
 
@@ -72,6 +73,7 @@ uvicorn server:app --bind 8888
 
 4. Go to your page and start highlighting 😊.
 
+---
 
 ## Usage
 
@@ -86,6 +88,7 @@ You can also use the keyboard shortcuts:
 - `ALT + L` to send the highlighted text + Note.
 - `ALT + P` to send the highlighted text + Tags and a note.
 
+---
 
 ## Contributing
 
