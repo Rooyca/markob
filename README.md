@@ -7,13 +7,20 @@ Highlight your text and send it to your Obsidian vault. It automatically creates
 
 ### Firefox
 
+#### Firefox Browser Addons
+
+1. Go to [Firefox browser addons](https://addons.mozilla.org/en-US/firefox/addon/markob/)
+2. Install the extension
+
+#### Manual Installation
+
 1. Download the latest version from [here](Install.zip)
 2. Open `about:debugging` in Firefox
 3. Click on "This Firefox"
 4. Click on "Load Temporary Add-on"
 5. Select the `Install.zip` file
 
-### Running the api
+## Running the api
 
 #### Docker (recomended)
 
