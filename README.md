@@ -29,10 +29,10 @@ If you dont have docker installed go [**here**](https://docs.docker.com/engine/i
 1. Run 
 
 ```bash
-docker run -d -v /home/rooyca/Documents/Obsidian/Highlights/:/code/obsi -p 8888:8888 rooyca/markob
+docker run -d -v /home/USER/Documents/Obsidian/Highlights/:/code/obsi -p 8888:8888 rooyca/markob
 ```
 
-Where `/home/rooyca/Documents/Obsidian/Highlights/` is the path to your Obsidian vault. Make sure to create your `Highlights` folder in your vault.
+Where `/home/USER/Documents/Obsidian/Highlights/` is the path to your Obsidian vault. Make sure to create your `Highlights` folder in your vault.
 
 It's that simple!
 
