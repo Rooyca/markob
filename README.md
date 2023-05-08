@@ -3,6 +3,8 @@
 
 Highlight your text and send it to your Obsidian vault. It automatically creates you a file with the name of the page.
 
+![highlighter](highlighter_obsidian.png)
+
 ## Installation
 
 ### Firefox
