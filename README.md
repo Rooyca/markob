@@ -22,9 +22,24 @@ Highlight your text and send it to your Obsidian vault. It automatically creates
 4. Click on "Load Temporary Add-on"
 5. Select the `Install.zip` file
 
-## Running the api
+## Running the server
 
-#### Docker (recomended)
+**Enviorment variables**
+
+| Variable | Description | Default |
+| -------- | ----------- | ------- |
+| `OBSIDIAN_PATH` | Path to your Obsidian vault | `/code/obsi/` |
+
+#### Binary
+
+Download the latest binary from the [release page](https://github.com/Rooyca/MarkOb-Obsidian-Highligter/releases/download/0.0.1/markob), make it executable and run it.
+
+```bash
+chmod +x markob
+./markob
+```
+
+#### Docker
 
 If you dont have docker installed go [**here**](https://docs.docker.com/engine/install/) and follow the instructions.
 
