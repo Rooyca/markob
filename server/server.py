@@ -3,10 +3,10 @@ from typing import Union
 from fastapi import Body, FastAPI
 from pydantic import BaseModel, Field
 from typing import Any
-import os, datetime
+import os, datetime, uvicorn
 
 app = FastAPI()
-obsidian_path = "/code/obsi/"
+obsidian_path = os.getenv('OBSIDIAN_PATH', '/code/obsi/')
 
 
 class Content(BaseModel):
@@ -53,4 +53,6 @@ creado: {datetime.datetime.now().strftime("%Y" + "-" + "%m" + "-" + "%d")}
 
 	return content
 
+if __name__ == "__main__":
+	uvicorn.run(app, host="localhost", port=8000)
 	
