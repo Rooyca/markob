@@ -37,10 +37,22 @@ While reading your favorite articles you can highlight your texts and send them 
 
 If you dont have docker installed go [**here**](https://docs.docker.com/engine/install/) and follow the instructions.
 
-1. Run 
+1. Pull the image
 
 ```bash
-docker run -d -v /home/USER/Documents/Obsidian/Highlights/:/code/obsi -p 8888:8888 rooyca/markob:slim
+docker pull ghcr.io/rooyca/markob:main
+```
+
+2. Export the `OBSIDIAN_PATH` variable
+
+```bash
+export OBSIDIAN_PATH=/home/USER/Documents/Obsidian/Highlights/
+```
+
+3. Run the image
+
+```bash
+docker run --rm -p 8888:8888 rooyca/markob:main
 ```
 
 Where `/home/USER/Documents/Obsidian/Highlights/` is the path to your Obsidian vault. Make sure to create your `Highlights` folder in your vault.
@@ -63,10 +75,16 @@ git clone https://github.com/Rooyca/MarkOb
 docker build -t markob .
 ```
 
-3. Run the image
+3. Export the `OBSIDIAN_PATH` variable
 
 ```bash
-docker run -d -v /home/rooyca/Documents/Obsidian/Highlights/:/code/obsi -p 8888:8888 markob
+export OBSIDIAN_PATH=/home/USER/Documents/Obsidian/Highlights/
+```
+
+4. Run the image
+
+```bash
+docker run --rm -p 8888:8888 markob
 ```
 
 #### Binary
