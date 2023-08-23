@@ -1,2 +1,6 @@
 *.build
 *.bin
+.venv
+**/dist
+**/__pycache__
+

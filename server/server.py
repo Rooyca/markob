@@ -51,8 +51,15 @@ class RequestHandler(BaseHTTPRequestHandler):
         self._set_response()
         self.wfile.write(response["href"].encode('utf-8'))
 
+def main():
+    try:
+        server_address = ('0.0.0.0', 8888)
+        httpd = HTTPServer(server_address, RequestHandler)
+        print('Markob server...')
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        print('Markob server stopped...')
+        httpd.socket.close()
+
 if __name__ == "__main__":
-    server_address = ('0.0.0.0', 8888)
-    httpd = HTTPServer(server_address, RequestHandler)
-    print('Starting server...')
-    httpd.serve_forever()
+    main()

@@ -5,9 +5,9 @@
 
 While reading your favorite articles you can highlight your texts and send them to your Obsidian vault and it will automatically create a file with the name of the page. Saving what interests you has never been easier*.
 
-![highlighter](highlighter_obsidian.png)
+![highlighter](https://github.com/Rooyca/markob/blob/main/highlighter_obsidian.png)
 
-## Installation
+## Extension Installation
 
 ### Firefox
 
@@ -32,6 +32,25 @@ While reading your favorite articles you can highlight your texts and send them 
 | -------- | ----------- | ------- |
 | `OBSIDIAN_PATH` | Path to your Obsidian vault | `/code/obsi/` |
 
+#### PIP
+
+1. Install the package
+
+```bash
+pip install markob
+```
+
+2. Export the `OBSIDIAN_PATH` variable
+
+```bash
+export OBSIDIAN_PATH=/home/USER/Documents/Obsidian/Highlights/
+```
+
+3. Run the server
+
+```bash
+markob
+```
 
 #### Docker
 

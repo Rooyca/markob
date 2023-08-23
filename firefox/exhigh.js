@@ -64,9 +64,9 @@ function post(data) {
     }, TIMEOUT).then((res) => {
       if (!res.ok) {
         if (res.status == 401) {
-          alert(`hili: Unauthorized (check your authentication key)`);
+          alert(`markob: Unauthorized (check your authentication key)`);
         } else {
-          alert(`hili: Bad response from server: ${res.status}`);
+          alert(`markob: Bad response from server: ${res.status}`);
         }
       } else {
         // Send a confirmation notification
@@ -80,10 +80,9 @@ function post(data) {
       queue.push(data);
       queueEl.style.display = 'block';
       queueEl.innerText = queue.length;
-      // alert(`hili: ${err.message}`);
     });
      (err) => {
-    alert(`hili: ${err.message}`);
+    alert(`markob: ${err.message}`);
 }}
 
 // Retry queued
