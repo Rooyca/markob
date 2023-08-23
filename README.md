@@ -1,7 +1,9 @@
-# **MarkOb - Obsidian Highligter**
+# **markob** - Web Highlighter for Obsidian
+
+[![Docker image](https://github.com/Rooyca/markob/actions/workflows/deploy-image.yml/badge.svg?branch=main)](https://github.com/Rooyca/markob/actions/workflows/deploy-image.yml)
 
 
-Highlight your text and send it to your Obsidian vault. It automatically creates you a file with the name of the page.
+While reading your favorite articles you can highlight your texts and send them to your Obsidian vault and it will automatically create a file with the name of the page. Saving what interests you has never been easier*.
 
 ![highlighter](highlighter_obsidian.png)
 
@@ -30,14 +32,6 @@ Highlight your text and send it to your Obsidian vault. It automatically creates
 | -------- | ----------- | ------- |
 | `OBSIDIAN_PATH` | Path to your Obsidian vault | `/code/obsi/` |
 
-#### Binary
-
-Download the latest binary from the [release page](https://github.com/Rooyca/MarkOb-Obsidian-Highligter/releases/download/0.0.1/markob), make it executable and run it.
-
-```bash
-chmod +x markob
-./markob
-```
 
 #### Docker
 
@@ -75,7 +69,16 @@ docker build -t markob .
 docker run -d -v /home/rooyca/Documents/Obsidian/Highlights/:/code/obsi -p 8888:8888 markob
 ```
 
-#### Python
+#### Binary
+
+Download the latest binary from the [release page](https://github.com/Rooyca/markob/releases/download/0.0.1/markob), make it executable and run it.
+
+```bash
+chmod +x markob
+./markob
+```
+
+#### Python (FastAPI Version)
 
 1. Clone the repo
 
@@ -92,10 +95,22 @@ pip install -r requirements.txt
 3. Run the api
 
 ```bash
-uvicorn server:app --bind 8888
+uvicorn server/server.old:app --bind 8888
 ```
 
-4. Go to your page and start highlighting 😊.
+#### Python (http.server Version)
+
+1. Clone the repo
+
+```bash
+git clone https://github.com/Rooyca/MarkOb
+```
+
+2. Run the server
+
+```bash
+python server/server.py
+```
 
 ---
 
@@ -117,14 +132,3 @@ You can also use the keyboard shortcuts:
 ## Contributing
 
 All contributions are welcome! If you find a bug or have a suggestion please open an issue. If you want to contribute code please open a pull request.
-
-
-
-
-
-
-
-
-
-
-
