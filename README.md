@@ -89,10 +89,10 @@ docker run --rm -p 8888:8888 markob
 
 #### Binary
 
-Download the latest binary from the [release page](https://github.com/Rooyca/markob/releases/download/0.0.1/markob), make it executable and run it.
+Download the latest binary from the [release page](https://github.com/Rooyca/markob/releases/download/0.0.2/markob.bin), make it executable and run it.
 
 ```bash
-chmod +x markob
+chmod +x markob.bin
 ./markob
 ```
 
