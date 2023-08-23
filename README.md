@@ -32,6 +32,9 @@ While reading your favorite articles you can highlight your texts and send them 
 | -------- | ----------- | ------- |
 | `OBSIDIAN_PATH` | Path to your Obsidian vault | `/code/obsi/` |
 
+- **Befor running the server make sure you export the `OBSIDIAN_PATH` variable by running `export OBSIDIAN_PATH=/path/to/your/obsidian/vault`.**
+
+
 #### PIP
 
 1. Install the package
@@ -40,13 +43,7 @@ While reading your favorite articles you can highlight your texts and send them 
 pip install markob
 ```
 
-2. Export the `OBSIDIAN_PATH` variable
-
-```bash
-export OBSIDIAN_PATH=/home/USER/Documents/Obsidian/Highlights/
-```
-
-3. Run the server
+2. Run the server
 
 ```bash
 markob
@@ -62,13 +59,7 @@ If you dont have docker installed go [**here**](https://docs.docker.com/engine/i
 docker pull ghcr.io/rooyca/markob:main
 ```
 
-2. Export the `OBSIDIAN_PATH` variable
-
-```bash
-export OBSIDIAN_PATH=/home/USER/Documents/Obsidian/Highlights/
-```
-
-3. Run the image
+2. Run the image
 
 ```bash
 docker run --rm -p 8888:8888 rooyca/markob:main
@@ -94,13 +85,7 @@ git clone https://github.com/Rooyca/MarkOb
 docker build -t markob .
 ```
 
-3. Export the `OBSIDIAN_PATH` variable
-
-```bash
-export OBSIDIAN_PATH=/home/USER/Documents/Obsidian/Highlights/
-```
-
-4. Run the image
+3. Run the image
 
 ```bash
 docker run --rm -p 8888:8888 markob
